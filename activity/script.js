@@ -3,10 +3,14 @@ let addTodoButton = document.querySelector(".add-todo");
 let todosList = document.querySelector(".todos-list"); 
 
 function addTodo(){
+    // method to add todo's
     let todo = todoInput.value;
     
     if(todo){
+        // get list of items
         let listItem = document.createElement("li"); 
+
+        // add items to list
         listItem.classList.add("todo-item"); 
        
         let pTag = document.createElement("p");
